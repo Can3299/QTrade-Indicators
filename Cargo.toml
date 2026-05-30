@@ -11,7 +11,7 @@ documentation = "https://docs.rs/qtrade-indicators"
 homepage = "https://github.com/Can3299/qtrade-indicators"
 readme = "README.md"
 keywords = ["trading", "technical-analysis", "indicators", "ta", "finance"]
-categories = ["science::finance", "algorithms"]
+categories = ["finance", "algorithms"]
 
 [features]
 default = []
