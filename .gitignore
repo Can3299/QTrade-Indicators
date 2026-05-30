@@ -1,0 +1,28 @@
+# Files
+*.log
+
+# Compiled Files
+*.run
+*.o
+*.so
+
+# Dependencies
+**/target/
+
+# Build Output
+**/build/
+
+# Secrets
+*.env
+
+# Archives
+*.test
+*.zip
+*.tar
+*.tar.gz
+
+# IDE
+**/.vscode/
+
+# Cargo.lock is not committed for libraries
+Cargo.lock

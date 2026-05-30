@@ -1,0 +1,36 @@
+[package]
+name = "qtrade-indicators"
+version = "0.1.0"
+edition = "2024"
+description = "Collection of technical analysis indicators for trading, including ATR, MACD, Supertrend, SMA, EMA, WMA, RMA, SMMA, Williams Fractals, True Range, and Median Price"
+authors = ["Can3299"]
+license = "Apache-2.0"
+rust-version = "1.85"
+repository = "https://github.com/Can3299/qtrade-indicators"
+documentation = "https://docs.rs/qtrade-indicators"
+homepage = "https://github.com/Can3299/qtrade-indicators"
+readme = "README.md"
+keywords = ["trading", "technical-analysis", "indicators", "ta", "finance"]
+categories = ["science::finance", "algorithms"]
+
+[features]
+default = []
+median_price = []
+tr = []
+wf = []
+sma = []
+smma = []
+ema = []
+rma = []
+wma = []
+atr = ["tr", "sma", "smma", "ema", "rma", "wma"]
+macd = ["ema"]
+supertrend = []
+
+dev = [
+    "median_price", "tr", "wf", "sma", "smma", "ema", "rma", "wma",
+    "atr", "macd", "supertrend",
+]
+
+[dependencies]
+tracing = "0.1.44"
